@@ -44,6 +44,8 @@ This repo is a captive portal page designed for use with OpenWRT and NoDogSplash
 
   4. Copy my splash.html and infoskel.html to `/etc/nodogsplash/htdocs/`. Alternatively, write your own using the source link below.
 
+  5. Copy the JS and CSS files to your webserver's (listening on port 80) webroot in a folder called "captive". This should be /www/ on GL.iNet devices.
+
   *Source*: https://openwrt.org/docs/guide-user/services/captive-portal/wireless.hotspot.nodogsplash
 
 - Make connections easier (optional):

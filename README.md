@@ -40,7 +40,7 @@ This repo is a captive portal page designed for use with OpenWRT and NoDogSplash
 
   2. Install `nodogsplash`: `opkg update && opkg install nodogsplash`
 
-  3. Copy my configuration file (nodogsplash.conf in this repo) to `/etc/config/nodogsplash`. Alternatively, use the source link below to write your own configuration.
+  3. Copy my configuration file (nodogsplash.conf in this repo) to `/etc/config/nodogsplash`. Alternatively, use the source link below to write your own configuration. My configuration blocks access to the secured LAN (which is 172.16.0.1/16 for me, but by default, is 192.168.8.1/24). It also allows authenticated users to access ports 53, 80, 443, 993, 995, 465, 110, 143. Trusted MACs do not bypass these rules, unlike with the default configuration.
 
   4. Copy my splash.html and infoskel.html to `/etc/nodogsplash/htdocs/`. Alternatively, write your own using the source link below.
 

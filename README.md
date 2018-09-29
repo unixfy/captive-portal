@@ -15,6 +15,8 @@ This repo is a captive portal page designed for use with OpenWRT and NoDogSplash
 
 - Connect to your router's network.
 
+- Set the router's IP to 172.16.1.1 and the DHCP subnet for the secure WLAN to 172.16.1.1/24 or 172.16.0.1/16. Or, replace every instance of `172.16.1.1` in the files, configs, and steps below with your router's IP. 
+
 - Set up a Guest WLAN and secure it:
   1. Go to Network > Wireless and click "Add" next to the radio you want your Guest Network to broadcast on (2.4G or 5G, does not matter). Edit it, and set the SSID to whatever you would like. Make sure the mode is set to *Access Point*, and create a new Network called `guest`. Everything else can be changed (security etc) without problem. Save and apply.
 

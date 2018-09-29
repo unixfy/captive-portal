@@ -50,7 +50,7 @@ This repo is a captive portal page designed for use with OpenWRT and NoDogSplash
 
   1. If you have writable NFC tags and an Android device, install an app like [NFC Tools](https://play.google.com/store/apps/details?id=com.wakdev.wdnfc&hl=en_US) and write your Wifi network to the NFC tag. This way, users with Android phones and the NFC Tasks app can instantly connect to your guest wifi by just tapping their phone on the tag.
 
-## Additional Resources:
+## Additional Resources
 
 [NoDogSplash Docs](http://nodogsplash.rtfd.io)
 

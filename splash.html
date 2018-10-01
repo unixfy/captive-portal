@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="http://172.16.1.1/captive/bootstrap.min.css">
+
+  <title>WiFi Sign In</title>
+</head>
+
+<body>
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1>Welcome to the Wi-Fi Sign In page.</h1>
+    <p class="lead">For the <b>$gatewayname</b> Wi-Fi network.</p>
+    <hr class="my-4">
+    <h5>Please make sure to read the info below.</h5>
+  </div>
+
+  <div class="container-fluid">
+    <!-- Info card (Not collapsible) -->
+    <div class="card bg-info text-white">
+      <div class="card-header">
+        Read Me First
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Important Info</h5>
+        <p class="card-text">
+          <ul>
+            <li>
+              This WiFi network is powered by the cellular network (currently T-Mobile). Speeds might vary.
+            </li>
+            <li>
+              Speeds are throttled to 2 Mbit / s as to not use all my data.
+            </li>
+            <li>
+              Do not use a VPN to try to bypass the throttling. It won't work. You can only access HTTP/HTTPS (websites) and email.
+            </li>
+            <li>
+              Nothing is blocked on this network, however, don't use this for the wrong things. You'll get your device permanently banned :)
+            </li>
+            <li>
+              There's no Terms of Service to agree to!
+            </li>
+          </ul>
+        </p>
+        If you understand the above, <a href="$authtarget" class="btn btn-primary btn-lg">Connect to the Internet!</a>
+      </div>
+    </div>
+
+    <br />
+
+    <!-- FAQs card (collapsible) -->
+    <div class="card bg-secondary text-white">
+      <div class="card-header" id="faq-header">
+        <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#faq-collapse" aria-expanded="true" aria-controls="faq-collapse">
+          FAQs
+        </button>
+      </div>
+      <div id="faq-collapse" class="collapse hide" aria-labelledby="faq-header">
+        <div class="card-body">
+          <h5 class="card-title">Frequently Asked Questions</h5>
+          <p class="card-text">
+            <p>
+              Q: Why is the Wi-Fi so slow?
+              <br /> A: It's artificially slowed to 2 Mbps to save data.
+            </p>
+            <p>
+              Q: What can I, and can I not, do on this network?
+              <br /> A: Don't do things like YouTube. Otherwise, if you have to ask, it's probably a no.
+            </p>
+            <p>
+              Q: Who is doing this?
+              <br /> A: :)
+            </p>
+            <p>
+              Q: Can I remove people from the network?
+              <br /> A: No.
+            </p>
+            <p>
+              Q: Why do I keep disconnecting?
+              <br /> A: This network isn't online all the time. When you are in range, however, your device should automatically reconnect.
+            </p>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <br />
+
+    <!-- Diag card (collapsible) -->
+    <div class="card bg-danger text-white">
+      <div class="card-header" id="diag-header">
+        <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#diag-collapse" aria-expanded="true" aria-controls="diag-collapse">
+          Info for Nerds
+        </button>
+      </div>
+      <div id="diag-collapse" class="collapse hide" aria-labelledby="diag-header">
+        <div class="card-body">
+          <h5 class="card-title">Diagnostic Information</h5>
+          <p class="card-text">
+            <ul>
+              <li>
+                <b>Your Internal IP:</b> $clientip
+              </li>
+              <li>
+                <b>Your MAC Address:</b> $clientmac
+              </li>
+              <li>
+                <b>Router MAC Address:</b> $gatewaymac
+              </li>
+              <li>
+                <b>Number of Clients:</b> $nclients
+              </li>
+              <li>
+                <b>AP Uptime:</b> $uptime
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- JS -->
+  <script src="http://172.16.1.1/captive/jquery-3.3.1.slim.min.js"></script>
+  <script src="http://172.16.1.1/captive/bootstrap.min.js"></script>
+</body>
+
+</html>
